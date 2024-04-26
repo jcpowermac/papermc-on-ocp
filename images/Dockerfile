@@ -15,6 +15,8 @@ RUN VERSION=$(curl -s https://api.papermc.io/v2/projects/velocity| jq -r '.versi
     curl https://api.papermc.io/v2/projects/velocity/versions/$VERSION/builds/$BUILD/downloads/$NAME --output /deployments/velocity.jar
 
 
-COPY eula.txt /deployments
-COPY eula.txt /deployments/data
+RUN curl https://repo.maven.apache.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.20.0/jmx_prometheus_javaagent-0.20.0.jar --output /deployments/jmx_prometheus_javaagent-0.20.0.jar
 
+
+COPY eula.txt /deployments
+COPY jmx-exporter.yml /deployments
