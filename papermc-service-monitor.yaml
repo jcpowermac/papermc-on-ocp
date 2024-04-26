@@ -1,10 +1,13 @@
 apiVersion: monitoring.coreos.com/v1
-kind: PodMonitor
+kind: ServiceMonitor
 metadata:
   name: papermc
+  namespace: minecraft
 spec:
+  endpoints:
+  - interval: 30s
+    port: metrics
+    scheme: http
   selector:
     matchLabels:
       app: papermc
-  podMetricsEndpoints:
-  - port: prometheus

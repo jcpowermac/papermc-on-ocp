@@ -1,0 +1,9 @@
+apiVersion: image.openshift.io/v1
+generation: 1
+kind: ImageStreamTag
+lookupPolicy:
+  local: false
+metadata:
+  name: papermc:latest
+  namespace: minecraft
+tag: null
