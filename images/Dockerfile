@@ -7,10 +7,10 @@ USER 185
 RUN VERSION=$(curl -s https://api.papermc.io/v2/projects/paper | jq -r '.versions | last') && \
     NAME=$(curl -s https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .downloads.application.name') && \
     BUILD=$(curl -s https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .build') && \
-    curl https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds/$BUILD/downloads/$NAME --output paper.jar
+    curl https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds/$BUILD/downloads/$NAME --output /deployments/paper.jar
 
 RUN VERSION=$(curl -s https://api.papermc.io/v2/projects/velocity| jq -r '.versions | last') && \
     NAME=$(curl -s https://api.papermc.io/v2/projects/velocity/versions/$VERSION/builds | jq -r '.builds |  map(select(.channel == "default")) | last | .downloads.application.name') && \
     BUILD=$(curl -s https://api.papermc.io/v2/projects/velocity/versions/$VERSION/builds | jq -r '.builds |  map(select(.channel == "default")) | last | .build') && \
-    curl https://api.papermc.io/v2/projects/velocity/versions/$VERSION/builds/$BUILD/downloads/$NAME --output velocity.jar
+    curl https://api.papermc.io/v2/projects/velocity/versions/$VERSION/builds/$BUILD/downloads/$NAME --output /deployments/velocity.jar
 
