@@ -14,3 +14,7 @@ RUN VERSION=$(curl -s https://api.papermc.io/v2/projects/velocity| jq -r '.versi
     BUILD=$(curl -s https://api.papermc.io/v2/projects/velocity/versions/$VERSION/builds | jq -r '.builds |  map(select(.channel == "default")) | last | .build') && \
     curl https://api.papermc.io/v2/projects/velocity/versions/$VERSION/builds/$BUILD/downloads/$NAME --output /deployments/velocity.jar
 
+
+COPY eula.txt /deployments
+COPY eula.txt /deployments/data
+
