@@ -8,7 +8,8 @@ USER 185
 COPY ./plugins/velocity.json .
 
 RUN mkdir /deployments/plugins && \
-    cat velocity.json | jq -r '.plugins[].url' | xargs  wget --directory-prefix /deployments/plugins/
+    chmod -R g+rwx /deployments/plugins && \
+    cat velocity.json | jq -r '.plugins[].url' | xargs  wget --content-disposition --directory-prefix /deployments/plugins/
 
 
 RUN VERSION=$(curl -s https://api.papermc.io/v2/projects/velocity| jq -r '.versions | last') && \
