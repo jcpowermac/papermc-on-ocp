@@ -1,0 +1,18 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: velocity
+  namespace: minecraft
+  labels:
+    app: velocity
+  annotations:
+    metallb.universe.tf/address-pool: ip-addresspool
+spec:
+  ports:
+    - port: 25577
+      targetPort: 25577
+  selector:
+    app: velocity
+  type: LoadBalancer
+  loadBalancerIP: 172.31.54.42

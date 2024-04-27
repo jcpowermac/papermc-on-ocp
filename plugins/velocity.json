@@ -1,0 +1,13 @@
+{
+  "plugins": [{
+    "name": "geyser",
+    "url": "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/velocity"
+  },{
+    "name": "ViaVersion",
+    "url": "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/4.10.0/PAPER/ViaVersion-4.10.0.jar"
+  },{
+    "name": "ViaBackwards",
+    "url": "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/4.10.0/PAPER/ViaBackwards-4.10.0.jar"
+  }]
+}
+
