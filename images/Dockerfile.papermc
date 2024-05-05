@@ -4,10 +4,10 @@ USER root
 RUN microdnf install jq wget -y
 
 USER 185
-COPY plugins.json .
+COPY plugins.json /tmp/plugins.json
 RUN mkdir /deployments/plugins && \
     chmod -R g+rwx /deployments/plugins && \
-    cat plugins.json | jq -r '.plugins[].url' | xargs  wget --content-disposition --directory-prefix /deployments/plugins/
+    cat /tmp/plugins.json | jq -r '.plugins[].url' | xargs  wget --content-disposition --directory-prefix /deployments/plugins/
 
 RUN VERSION=$(curl -s https://api.papermc.io/v2/projects/paper | jq -r '.versions | last') && \
     NAME=$(curl -s https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .downloads.application.name') && \
