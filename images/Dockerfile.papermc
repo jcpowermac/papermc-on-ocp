@@ -3,8 +3,9 @@ FROM registry.access.redhat.com/ubi9/openjdk-21:1.18-3
 USER root
 RUN microdnf install jq wget -y
 
-USER 185
 COPY plugins.json /tmp/plugins.json
+RUN chmod 666 /tmp/plugins.json
+USER 185
 RUN mkdir /deployments/plugins && \
     chmod -R g+rwx /deployments/plugins && \
     cat /tmp/plugins.json | jq -r '.plugins[].url' | xargs  wget --content-disposition --directory-prefix /deployments/plugins/
