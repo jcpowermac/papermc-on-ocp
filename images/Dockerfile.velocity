@@ -6,6 +6,7 @@ RUN microdnf install jq wget -y
 USER 185
 
 
+COPY plugins.json .
 RUN mkdir /deployments/plugins && \
     chmod -R g+rwx /deployments/plugins && \
     cat plugins.json | jq -r '.plugins[].url' | xargs  wget --content-disposition --directory-prefix /deployments/plugins/
