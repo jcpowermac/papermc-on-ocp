@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi9/openjdk-21:1.18-3
 
 USER root
-RUN microdnf install jq -y
+RUN microdnf install jq wget -y
 
 USER 185
 COPY plugins.json .
