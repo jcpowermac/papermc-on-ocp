@@ -10,10 +10,13 @@ RUN mkdir /deployments/plugins && \
     chmod -R g+rwx /deployments/plugins && \
     cat /tmp/plugins.json | jq -r '.plugins[].url' | xargs  wget --content-disposition --directory-prefix /deployments/plugins/
 
-RUN VERSION=$(curl -s https://api.papermc.io/v2/projects/paper | jq -r '.versions | last') && \
-    NAME=$(curl -s https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .downloads.application.name') && \
-    BUILD=$(curl -s https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .build') && \
-    curl https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds/$BUILD/downloads/$NAME --output /deployments/paper.jar
+ENV PROJECT=paper
+
+RUN VERSION_GROUP=$(curl -s https://api.papermc.io/v2/projects/$PROJECT | jq -r '.version_groups | last') && \
+    VERSION=$(curl -s https://api.papermc.io/v2/projects/$PROJECT/version_group/$VERSION_GROUP/builds  | jq -r '.builds |map(select(.channel == "default")) | last |.version') && \
+    NAME=$(curl -s https://api.papermc.io/v2/projects/$PROJECT/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .downloads.application.name') && \
+    BUILD=$(curl -s https://api.papermc.io/v2/projects/$PROJECT/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .build') && \
+    curl https://api.papermc.io/v2/projects/$PROJECT/versions/$VERSION/builds/$BUILD/downloads/$NAME --output /deployments/paper.jar
 
 RUN curl https://repo.maven.apache.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.20.0/jmx_prometheus_javaagent-0.20.0.jar --output /deployments/jmx_prometheus_javaagent-0.20.0.jar
 
