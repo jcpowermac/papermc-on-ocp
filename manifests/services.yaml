@@ -1,0 +1,129 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Service
+  metadata:
+    creationTimestamp: "2024-04-26T12:02:01Z"
+    labels:
+      app: papermc
+    name: metrics
+    namespace: minecraft
+    resourceVersion: "168826"
+    uid: 3fc54bf4-bf37-4fd6-9b6f-28d064fa4062
+  spec:
+    clusterIP: 172.30.195.227
+    clusterIPs:
+    - 172.30.195.227
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: metrics
+      port: 12345
+      protocol: TCP
+      targetPort: 12345
+    selector:
+      app: papermc
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    creationTimestamp: "2024-04-27T00:23:45Z"
+    labels:
+      app: papermc
+    name: papermc
+    namespace: minecraft
+    resourceVersion: "2129021"
+    uid: c56f6100-ab4d-4cdb-bb55-00ae020e7a70
+  spec:
+    clusterIP: 172.30.162.51
+    clusterIPs:
+    - 172.30.162.51
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: minecraft
+      port: 25565
+      protocol: TCP
+      targetPort: 25565
+    selector:
+      app: papermc
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      metallb.universe.tf/address-pool: ip-addresspool
+      metallb.universe.tf/ip-allocated-from-pool: ip-addresspool
+    creationTimestamp: "2024-04-27T16:01:58Z"
+    labels:
+      app: velocity
+    name: velocity
+    namespace: minecraft
+    resourceVersion: "434589"
+    uid: a578713b-1ea4-4821-8bff-1bfecc90798a
+  spec:
+    allocateLoadBalancerNodePorts: true
+    clusterIP: 172.30.116.84
+    clusterIPs:
+    - 172.30.116.84
+    externalTrafficPolicy: Cluster
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    loadBalancerIP: 172.31.54.42
+    ports:
+    - nodePort: 30882
+      port: 25577
+      protocol: TCP
+      targetPort: 25577
+    selector:
+      app: velocity
+    sessionAffinity: None
+    type: LoadBalancer
+  status:
+    loadBalancer:
+      ingress:
+      - ip: 172.31.54.42
+- apiVersion: v1
+  kind: Service
+  metadata:
+    creationTimestamp: "2024-04-27T01:26:01Z"
+    labels:
+      app: velocity
+    name: velocity-metrics
+    namespace: minecraft
+    resourceVersion: "412644"
+    uid: df019533-4cb9-4fdf-aeb2-c37c0c0df2ce
+  spec:
+    clusterIP: 172.30.161.226
+    clusterIPs:
+    - 172.30.161.226
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: metrics
+      port: 12345
+      protocol: TCP
+      targetPort: 12345
+    selector:
+      app: velocity
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+kind: List
+metadata:
+  resourceVersion: ""

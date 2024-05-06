@@ -1,0 +1,79 @@
+apiVersion: v1
+items:
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    creationTimestamp: "2024-04-25T21:40:14Z"
+    generation: 18
+    name: papermc
+    namespace: minecraft
+    resourceVersion: "2649487"
+    uid: 8ae7f911-7e23-4d43-957c-68208ec7ea04
+  spec:
+    failedBuildsHistoryLimit: 1
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: papermc:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      configMaps:
+      - configMap:
+          name: papermc-plugins
+      contextDir: /
+      git:
+        uri: https://github.com/jcpowermac/papermc-on-ocp
+      type: Git
+    strategy:
+      dockerStrategy:
+        dockerfilePath: images/Dockerfile.papermc
+        from:
+          kind: DockerImage
+          name: registry.access.redhat.com/ubi9/openjdk-21:1.18-1
+      type: Docker
+    successfulBuildsHistoryLimit: 1
+  status:
+    lastVersion: 14
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    creationTimestamp: "2024-04-27T16:23:34Z"
+    generation: 8
+    name: velocity
+    namespace: minecraft
+    resourceVersion: "2651404"
+    uid: 0faeb16b-2bcd-42a0-be40-6906d17426dc
+  spec:
+    failedBuildsHistoryLimit: 1
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: velocity:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      configMaps:
+      - configMap:
+          name: velocity-plugins
+      contextDir: /
+      git:
+        uri: https://github.com/jcpowermac/papermc-on-ocp
+      type: Git
+    strategy:
+      dockerStrategy:
+        dockerfilePath: images/Dockerfile.velocity
+        from:
+          kind: DockerImage
+          name: registry.access.redhat.com/ubi9/openjdk-21:1.18-1
+      type: Docker
+    successfulBuildsHistoryLimit: 1
+  status:
+    lastVersion: 5
+kind: List
+metadata:
+  resourceVersion: ""

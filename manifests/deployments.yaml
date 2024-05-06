@@ -1,0 +1,240 @@
+apiVersion: v1
+items:
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "51"
+      image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"papermc:latest","namespace":"minecraft"},"fieldPath":"spec.template.spec.containers[?(@.name==\"paper\")].image","pause":"false"}]'
+    creationTimestamp: "2024-04-25T21:43:34Z"
+    generation: 111
+    labels:
+      app: papermc
+      app.kubernetes.io/part-of: minecraft
+    name: papermc
+    namespace: minecraft
+    resourceVersion: "2650576"
+    uid: 0199b7c8-8525-4ee9-8a54-e9ec1a8c53d5
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        app: papermc
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: papermc
+      spec:
+        containers:
+        - env:
+          - name: PAPERMC_CONFIG_DIR
+            value: /papermc/configs
+          - name: JAVA_APP_DIR
+            value: /papermc/runtime
+          - name: JAVA_APP_JAR
+            value: paper.jar
+          - name: JAVA_TOOL_OPTIONS
+            value: -javaagent:/deployments/jmx_prometheus_javaagent-0.20.0.jar=12345:/deployments/jmx-exporter.yml
+          - name: JAVA_OPTS
+            value: -Xmx4096M -Xms4096M -XX:+AlwaysPreTouch -XX:+DisableExplicitGC
+              -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions
+              -XX:+UseG1GC -XX:G1HeapRegionSize=8M -XX:G1HeapWastePercent=5 -XX:G1MaxNewSizePercent=40
+              -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1NewSizePercent=30
+              -XX:G1RSetUpdatingPauseTimePercent=5 -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15
+              -XX:MaxGCPauseMillis=200 -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32
+          - name: JAVA_ARGS
+            value: -C $(PAPERMC_CONFIG_DIR)/commands.yml -b $(PAPERMC_CONFIG_DIR)/bukkit.yml
+              --paper-dir $(PAPERMC_CONFIG_DIR) -c $(PAPERMC_CONFIG_DIR)/server.properties
+              -S $(PAPERMC_CONFIG_DIR)/spigot.yml --universe /papermc/universe --plugins
+              /papermc/plugins --nogui
+          image: image-registry.openshift-image-registry.svc:5000/minecraft/papermc@sha256:8dab724d35888776c556150f93ed8f2e8aa56f58226ff07f68ff206e136ed877
+          imagePullPolicy: IfNotPresent
+          name: paper
+          ports:
+          - containerPort: 25565
+            protocol: TCP
+          - containerPort: 12345
+            name: metrics
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /papermc/configs
+            name: papermc-configs
+          - mountPath: /papermc/plugins
+            name: papermc-plugins-pvc
+          - mountPath: /papermc/universe
+            name: papermc-universe-pvc
+          - mountPath: /papermc/runtime
+            name: papermc-runtime
+        dnsPolicy: ClusterFirst
+        initContainers:
+        - command:
+          - sh
+          - -c
+          - echo "eula=true" > /papermc/runtime/eula.txt; cp -v /deployments/paper.jar
+            /papermc/runtime; ls -alh /deployments/paper.jar; ls -alh /papermc/runtime;cp
+            -v /tmp/configs/*.json /papermc/runtime; cp -v /tmp/configs/*.yml /papermc/configs/;cp
+            -v /deployments/plugins/* /papermc/plugins
+          image: image-registry.openshift-image-registry.svc:5000/minecraft/papermc:latest
+          imagePullPolicy: Always
+          name: paper-configs-init
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /tmp/configs
+            name: papermc-configs-cm
+          - mountPath: /papermc/configs
+            name: papermc-configs
+          - mountPath: /papermc/plugins
+            name: papermc-plugins-pvc
+          - mountPath: /papermc/runtime
+            name: papermc-runtime
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - configMap:
+            defaultMode: 420
+            name: papermc-configs
+          name: papermc-configs-cm
+        - emptyDir: {}
+          name: papermc-configs
+        - emptyDir: {}
+          name: papermc-runtime
+        - name: papermc-plugins-pvc
+          persistentVolumeClaim:
+            claimName: papermc-plugins-pvc
+        - name: papermc-universe-pvc
+          persistentVolumeClaim:
+            claimName: papermc-universe-pvc
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2024-04-25T21:43:34Z"
+      lastUpdateTime: "2024-05-05T20:46:01Z"
+      message: ReplicaSet "papermc-74f6c65898" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    - lastTransitionTime: "2024-05-05T20:46:12Z"
+      lastUpdateTime: "2024-05-05T20:46:12Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    observedGeneration: 111
+    readyReplicas: 1
+    replicas: 1
+    updatedReplicas: 1
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "10"
+      image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"velocity:latest","namespace":"minecraft"},"fieldPath":"spec.template.spec.containers[?(@.name==\"container\")].image","pause":"false"}]'
+    creationTimestamp: "2024-04-27T00:14:41Z"
+    generation: 15
+    labels:
+      app: velocity
+      app.kubernetes.io/part-of: minecraft
+    name: velocity
+    namespace: minecraft
+    resourceVersion: "2651598"
+    uid: a0744b48-dc8d-405d-84ea-5ec9923bca48
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        app: velocity
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: velocity
+      spec:
+        containers:
+        - env:
+          - name: JAVA_APP_JAR
+            value: velocity.jar
+          - name: JAVA_OPTS
+            value: -Xms512M -Xmx512M -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions
+              -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch
+          - name: JAVA_TOOL_OPTIONS
+            value: -javaagent:./jmx_prometheus_javaagent-0.20.0.jar=12345:/deployments/jmx-exporter.yml
+          image: image-registry.openshift-image-registry.svc:5000/minecraft/velocity@sha256:5a62762801fcf8cc840da306f59f820db4a3c8d4488ae137ac1a7514a01e01c8
+          imagePullPolicy: IfNotPresent
+          name: container
+          ports:
+          - containerPort: 25577
+            name: minecraft
+            protocol: TCP
+          - containerPort: 12345
+            name: metrics
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /deployments/forwarding.secret
+            name: velocity-forwarding
+            readOnly: true
+            subPath: forwarding.secret
+          - mountPath: /deployments/velocity.toml
+            name: velocity-config
+            readOnly: true
+            subPath: velocity.toml
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - name: velocity-forwarding
+          secret:
+            defaultMode: 420
+            secretName: velocity-forwarding
+        - configMap:
+            defaultMode: 420
+            name: velocity
+          name: velocity-config
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2024-05-03T22:41:42Z"
+      lastUpdateTime: "2024-05-03T22:41:42Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2024-04-27T00:14:41Z"
+      lastUpdateTime: "2024-05-05T20:51:18Z"
+      message: ReplicaSet "velocity-54857bd87f" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 15
+    readyReplicas: 1
+    replicas: 1
+    updatedReplicas: 1
+kind: List
+metadata:
+  resourceVersion: ""

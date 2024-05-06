@@ -1,0 +1,77 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    creationTimestamp: "2024-05-05T16:40:00Z"
+    finalizers:
+    - kubernetes.io/pv-protection
+    name: papermc-plugins-pv
+    resourceVersion: "2615178"
+    uid: 821b82f2-fdff-44c3-a0b4-82c4ff2c5e31
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 5Gi
+    claimRef:
+      apiVersion: v1
+      kind: PersistentVolumeClaim
+      name: papermc-plugins-pvc
+      namespace: minecraft
+      resourceVersion: "2615176"
+      uid: a3a5eafd-6c64-453c-ace1-e0055a036a37
+    local:
+      path: /srv/papermc/plugins
+    nodeAffinity:
+      required:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - b0-41-6f-0c-e8-b7
+    persistentVolumeReclaimPolicy: Retain
+    storageClassName: local-storage
+    volumeMode: Filesystem
+  status:
+    phase: Bound
+- apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    creationTimestamp: "2024-05-05T16:40:54Z"
+    finalizers:
+    - kubernetes.io/pv-protection
+    name: papermc-universe-pv
+    resourceVersion: "2614471"
+    uid: 7e8b6d4e-ab6d-4aaa-ab91-263c88f30763
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 5Gi
+    claimRef:
+      apiVersion: v1
+      kind: PersistentVolumeClaim
+      name: papermc-universe-pvc
+      namespace: minecraft
+      resourceVersion: "2614128"
+      uid: dc95eabe-9c53-4f8c-97e3-f38e601848d5
+    local:
+      path: /srv/papermc/universe
+    nodeAffinity:
+      required:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - b0-41-6f-0c-e8-b7
+    persistentVolumeReclaimPolicy: Retain
+    storageClassName: local-storage
+    volumeMode: Filesystem
+  status:
+    phase: Bound
+kind: List
+metadata:
+  resourceVersion: ""

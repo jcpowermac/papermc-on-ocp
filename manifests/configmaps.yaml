@@ -1,0 +1,1168 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  data:
+    ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDMjCCAhqgAwIBAgIIZJ+B45BSRgUwDQYJKoZIhvcNAQELBQAwNzESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSEwHwYDVQQDExhrdWJlLWFwaXNlcnZlci1sYi1zaWduZXIw
+      HhcNMjQwNDI1MjAyMDE5WhcNMzQwNDIzMjAyMDE5WjA3MRIwEAYDVQQLEwlvcGVu
+      c2hpZnQxITAfBgNVBAMTGGt1YmUtYXBpc2VydmVyLWxiLXNpZ25lcjCCASIwDQYJ
+      KoZIhvcNAQEBBQADggEPADCCAQoCggEBAMW/U0jRxwreA95GT5fYQaRiLZIE9SmO
+      APVP6Bfzdqg8SSPS+/Vv4mgjPx0HFTBaKZU624HnCcGQJERU4oUpbnOh1TbPYaja
+      A3ONCZad32Qs3whU8HgQDukTxqPo54lJT5pk8mT9HgONZxBQRSwbpW7OmZasG01S
+      ohQBa5ysOnIVa7Mv/1qnJ63MfVW9EJlBC7Xg/N+WLwf0ywOa2HyF5sXnlAJub4V/
+      ab19ptEsM1RGogkzEyyU0BPfmUO3KxB2DHbxaAOjvW0ebzCFrU5QqrUojXkmlNL5
+      a1Lq0zWH/1ojILl3VzLhmNLCq3oXND0QP9e9gcTm8MEChKS1VzUytMMCAwEAAaNC
+      MEAwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFHTa
+      IowOILR3B9usiBbXc8ttgm+uMA0GCSqGSIb3DQEBCwUAA4IBAQBmL0yoYc7H9zj9
+      lgyZg2Z3HLL0bQ9dUECWZNUVvnCOM0cXzMlgld1rODNgsolJ/M+i3FHPus0GcZ+5
+      7JE4gkjPt9oX5F0R5Bl5CdWXRZzqacE1LvnuT2PnIbW5jXNfo/UyNcgkxZs5dKwd
+      ohF/1dFOUGz4ERapF+0+raXAfa1aQVfiqP5A7JuC3zHuL7pkPqWPtjyVqm13z6F/
+      5BsGettsu//EF1akWAHpiahCiOB2v3OQdo2S62Tdjy4GjOWmvD6PIOoc9hcFu2To
+      NAmmVa97m+wuxAergA8I28Tw/PmTQeX6Q6h098XqpCpYdywFk/8vW3ooUUKkIqdM
+      FRPWsAdd
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDQDCCAiigAwIBAgIILIk52kFnqT8wDQYJKoZIhvcNAQELBQAwPjESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSgwJgYDVQQDEx9rdWJlLWFwaXNlcnZlci1sb2NhbGhvc3Qt
+      c2lnbmVyMB4XDTI0MDQyNTIwMjAxOVoXDTM0MDQyMzIwMjAxOVowPjESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSgwJgYDVQQDEx9rdWJlLWFwaXNlcnZlci1sb2NhbGhvc3Qt
+      c2lnbmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAszvQNkOyLOSN
+      bNn1xjXOWoLaVDqciBg/kDU7CV7xKcXzr5dETAbqwrYIg1E3/Qxa99FF0fN4Gk5A
+      fEcSdGEEC9dpbmKVYJgbKuqym/3HKdZp5SjHsIHc+tNfBb1nUaI711eAS7QATCMl
+      V5TgSHF1j4N9zzLKSyU0rZ9dD9qUvv2bU/yXBEyx+WuCVtW6mDb0ziFNbFJl3TUQ
+      5rzcLYTEuwA7uvb+uudCuM9rlROshOOwxmh5ZYG/2eRCDHSy5nzQ7kfOIDj+thQj
+      EffILrQZFIPnG5NZYJHqzjSUDUZGcca46VZFtOGhIXmeaUl6Q8gpLCLHsPwfUIjk
+      0dXS/yh5OQIDAQABo0IwQDAOBgNVHQ8BAf8EBAMCAqQwDwYDVR0TAQH/BAUwAwEB
+      /zAdBgNVHQ4EFgQUT63au1hru2cFRGa7F27XgmfdwUUwDQYJKoZIhvcNAQELBQAD
+      ggEBABjDyXnUwO6JDRuzQFZIcixLC8i0GWNiNEQ4lTOQ60RMVRtzjaUq+xYHvfW8
+      xzu7UvOvbm63CJAx4B5qfbJn58kzjBMml6mVxQNj+09Jyi6Av2sJpSuQKtfpySZ9
+      lsJI/t6jQvlubTTbfuK/22ZNf8aZvEkwQJ0TkGzK+kFUT7YKKzNPYmwASHKjjEhp
+      biLAW5+glkPNIOcmkrYRiUuNifOViSwK6nZmkf8ynC6DsbHdit5/S8pxDNwQaiBT
+      DP1ssnh5QSsxbn0gtyXdqCIMJtkKCSMHBly17aXGLliaOT8BXoN6j6nqcuqIVpSx
+      l77vmUaE1pcwHXXfrTGsfsl7avE=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDTDCCAjSgAwIBAgIINKw/KiYlNPkwDQYJKoZIhvcNAQELBQAwRDESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MS4wLAYDVQQDEyVrdWJlLWFwaXNlcnZlci1zZXJ2aWNlLW5l
+      dHdvcmstc2lnbmVyMB4XDTI0MDQyNTIwMjAxOVoXDTM0MDQyMzIwMjAxOVowRDES
+      MBAGA1UECxMJb3BlbnNoaWZ0MS4wLAYDVQQDEyVrdWJlLWFwaXNlcnZlci1zZXJ2
+      aWNlLW5ldHdvcmstc2lnbmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+      AQEArxf+7EHsWSFfRQMN0SrwpigKxpADtsrxh7QSTq9vIXSx2vca3Q+G4E7bNDKV
+      rZmgU/0JlfrRQg/xicocN5Gbd0KDNU837NG8TB3z3nqx7poEeKwUXLe/KO0Pc4kR
+      f3rHuR3msrsAaX39fHK8UAdQgWtPc5a4xMvFC3WBp/VUFjEH3KDsxE/jhQ+nD1bJ
+      tfmsSGeyQXt7vNfecy7hLALA/Vmfn6IGueBQ71h2NxWAGUiMCd9b5Y9ldwhGtjO2
+      To10hWvNUD0hufok41epuoDUitt6WhsONK/fbrkn6Dh+Cdq4ygPaJoLyMhg9UsOG
+      f/Mig0ilgWXNMX8BQITEIRJBFwIDAQABo0IwQDAOBgNVHQ8BAf8EBAMCAqQwDwYD
+      VR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUAsOrAECkjL9qcG2fGMcjvJA1jKgwDQYJ
+      KoZIhvcNAQELBQADggEBADsBMXBLpkWdeH7vFp9WUWHvebUGbqdkUDrbmFBBiO9H
+      Y2t4erNyQzcq6bqkMK8HJgJtPsbapaegsyPOEvwRl0e52N3KJ+FuxVISejPRuby2
+      c+1sunkSJSWuyYK0nVDvc4aa07rqtp8+sxHEO1kj1HRzfNfNU6zLYz8nWxgoo0BI
+      D47/IIXpbxr6Z5xst1HI6pv/VxKRdwOj9ia2SNpQu3ur4jvarTFvt6Ms1h6u8I4i
+      g0Yt3maIGvf78A7RygxkFOcJf6oUO/OJDhscTQxipPxpURL5MHwMlE5vmxcPcqaQ
+      Cs3rksdrSYRnKTVbooZcgfKkEE6JmI4u1XxVVenY1eQ=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDlzCCAn+gAwIBAgIIDoREAHkbpaIwDQYJKoZIhvcNAQELBQAwWTFXMFUGA1UE
+      AwxOb3BlbnNoaWZ0LWt1YmUtYXBpc2VydmVyLW9wZXJhdG9yX2xvY2FsaG9zdC1y
+      ZWNvdmVyeS1zZXJ2aW5nLXNpZ25lckAxNzE0MDc3NzI5MB4XDTI0MDQyNTIwNDIw
+      OFoXDTM0MDQyMzIwNDIwOVowWTFXMFUGA1UEAwxOb3BlbnNoaWZ0LWt1YmUtYXBp
+      c2VydmVyLW9wZXJhdG9yX2xvY2FsaG9zdC1yZWNvdmVyeS1zZXJ2aW5nLXNpZ25l
+      ckAxNzE0MDc3NzI5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1n2O
+      HFGhPS9HNcUM3lq39X19dWOkINf+EnJ8X1+kTFUi3TGXTOtvnpzAxmIcYmJEO7oy
+      w6FRcsGF8qsoKvlDQeWQXZYX1GY49tKW4oiJDc6FI9YF6LDa6l/erdm9HG7F1OUK
+      qM189aqC65uNIZv1FiA+IGjll/6d1RXaohvjkG66v2RNxPePkqE7ih18ZnOvRE12
+      KvcRR6pf48dlATVIyPHOrKs43YJ0sV0uzTRZn4a7x1hwGsdBfGxO0SWjeSJcSkIv
+      QYEG7k7c4aHF2UGQmsE+qQHW8I8NQjnqSweHfoL0y1SKi9Esfb2gQr8K4aVMPZHR
+      WT1Xgke77QNYYvhGdQIDAQABo2MwYTAOBgNVHQ8BAf8EBAMCAqQwDwYDVR0TAQH/
+      BAUwAwEB/zAdBgNVHQ4EFgQUYqCNRC2/5igX6ifNVqSGHw82KQ8wHwYDVR0jBBgw
+      FoAUYqCNRC2/5igX6ifNVqSGHw82KQ8wDQYJKoZIhvcNAQELBQADggEBAAABPcrW
+      Py4dzPkA6hq+KoTTVM81owhngZ5JkiLwXS5rqATppTmp8123VxXNubvfYKpMuu+q
+      cFnhihJie37CTShps/39gSvy2YIwHP4FHFxxvgjoI1v/BWS3wm1QabusCQ6gF5En
+      3gPI1WkOm3PlZj78hJlsWM+1ecbeufmQNxKUjWw8qUYcvzUsTzZIyVvRcjz9liGv
+      6Oz1hD1oHjsiVZX2vewoHTvvLfXWf4CJc+wm5F2BPwMCvHYVXsrHXJtOlGJ1tyOv
+      g+HdXXPKGB1AVhDZ2ipaS45wqFiXDRf7yAmBrReSN3AqpfkLDI5FudUqCKb5Br+g
+      QEIT+Z52nqEBe0s=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDYTCCAkmgAwIBAgIIPJu+CoAauLgwDQYJKoZIhvcNAQELBQAwJjEkMCIGA1UE
+      AwwbaW5ncmVzcy1vcGVyYXRvckAxNzE0MDc4MDcwMB4XDTI0MDQyNTIwNDc1MFoX
+      DTI2MDQyNTIwNDc1MVowIDEeMBwGA1UEAwwVKi5hcHBzLnNuby5zY2hjYWwub3Jn
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA22YchG/vMYG6ex80UGgQ
+      qMhD5Mfl428VptF20pYnoJJVUfcNaZIQxHoqYuqyuSX3U3WXaKkL1FvzlejviVTQ
+      lTBZzEnbaPrh3ztBjNY/AfY8HgGmQGgu1EFBvigF/2mM0YnOeILZjK/rVHTVL1QY
+      5Bp7JEsUReEV9zuGn9gkgG+Ew+X4yVq6XlVqh51TX2Xg86Wo40w5ftpFxYZNRNyL
+      LSYTxIcatapbbfbu6cV85y9khOVvrRd3F6zrYE5bdquu8iEJr0AK7LXUY0HoT7t0
+      +HWfwuomyJQcBzS/FGMyjBoJ+AhmCHkmr5KgUh4+bj7oC4D6kvdSsbol6STm0RTo
+      0QIDAQABo4GYMIGVMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcD
+      ATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTTFsPXaHSQ9Jhmjhku0a9isAZoEjAf
+      BgNVHSMEGDAWgBQTzMziq3PoAgDgIlvxRe3wjEDFtDAgBgNVHREEGTAXghUqLmFw
+      cHMuc25vLnNjaGNhbC5vcmcwDQYJKoZIhvcNAQELBQADggEBAHxoLD2ybQFssC0Q
+      KH+LLfXkjoRKp/Aof8bZAyGMpZYvizVn/Cf5lVjbWqydaZ0DyjDo8ZzWV2lIIGwD
+      MpTaPaRAdhsK342dNmCrjW9L1ZEeJDmybJ5jjf149aY/IQ+rI3/qBcyruGXBvqUy
+      pkoXkHLrI09/TCFogJDuil5nIpSbGzJ+j9acEP+r/w02GZUQTALi8Egj55I7GDVO
+      0G7dkzkqtA2jp4uSRZd0Gm735kKJXDZKYispBjgPTe0t8ykBg1obJyHlOnl0j8iK
+      9bxkqvv1qwtny4E96tecRYAboNG+uWoBN6+DzOgl3PUVPW5hSJUcSamgDLUB74fV
+      7GkN2F4=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDDDCCAfSgAwIBAgIBATANBgkqhkiG9w0BAQsFADAmMSQwIgYDVQQDDBtpbmdy
+      ZXNzLW9wZXJhdG9yQDE3MTQwNzgwNzAwHhcNMjQwNDI1MjA0NzQ5WhcNMjYwNDI1
+      MjA0NzUwWjAmMSQwIgYDVQQDDBtpbmdyZXNzLW9wZXJhdG9yQDE3MTQwNzgwNzAw
+      ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDBvMI401sRCUCUbewmA4KH
+      YNd2hZggW4DOxtfwIYSXBsHzk/ajjf4QE4yZz+Y2Ipvcp8AMXLwpowqgJSEfOY3l
+      MweNSd2eAk4pWkkF7g3B/0Pgjoh9IIGtjoOctOAbzb1Vsfliz+L+8jp/i3taELDA
+      pbTb3an+/YFFKtbV0VgtoRaUeNIu9SnuzZHLDUBaWsNVTjOzamqKvuAe3Rniow5v
+      71K4A6mT5l7EC92CMsUZfd8LujZY+XI0uR8T/0U/CXH2bMDnbI25HV2DZH0CoLVq
+      NWsu3g+h7RQFPXjgaTG5fVDRdj+phKRX9f4WVcvqmCbKKi2C8zXY2q0Zys2hAp1x
+      AgMBAAGjRTBDMA4GA1UdDwEB/wQEAwICpDASBgNVHRMBAf8ECDAGAQH/AgEAMB0G
+      A1UdDgQWBBQTzMziq3PoAgDgIlvxRe3wjEDFtDANBgkqhkiG9w0BAQsFAAOCAQEA
+      JvLifiRV4HHNC+fl57jMFXOWNgRdwJTT/qh+V2+0qFAeFVQic8iksybS9e+tzHd2
+      +nr9uuTO+bb4psNcqpZ4zkkVrRrixIvVdyOXPgcVvcQnR+Pts7+/Mkr4kwu3pQb8
+      52KTP7jxoSwd5xsgOeZOubRzh9tOjnyZpZukK26HgQolZ8+oFmlQPMT01GNC4TXn
+      t9Raao3o8mlIDCmxmIPVQUEvN6qn38/KunF667XzvL1AiayTHSS0dI+gMuOMze5w
+      oAE+8v5EWgghINMPPiqHhmyeHi0aFBJ+VBJuC8ueg/zohEiFb1vOkvPeWlg2I/lx
+      x3utkwBHhp1GVDB3gUgAmQ==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      kubernetes.io/description: Contains a CA bundle that can be used to verify the
+        kube-apiserver when using internal endpoints such as the internal service
+        IP or kubernetes.default.svc. No other usage is guaranteed across distributions
+        of Kubernetes clusters.
+    creationTimestamp: "2024-04-25T21:37:43Z"
+    name: kube-root-ca.crt
+    namespace: minecraft
+    resourceVersion: "33110"
+    uid: e6f51b89-abdc-4a8d-962d-b326a21e19ff
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIUt4nJdhvPmEwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTcxNDA3NzgwNjAe
+      Fw0yNDA0MjUyMDQzMjVaFw0yNjA2MjQyMDQzMjZaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE3MTQwNzc4MDYwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCgASsthyAqOyCIXJYwRXoGkZ9HeFkyAjc
+      hTmTmiKMgCTP/bsJaNpXiqwskYY5xYyfTA/YKY86I0snsNSepiWsSDmRlYR+5Zwf
+      pCaozXF9xHe72lh1Y5iOV+o5UG9Y8fK6PrqabXC3yMRNO9BoGibD3vWAeBvgh8iP
+      euq1tZHNuSqwLItCiQD9PMcVrGc0gkd6LE926qf2n81lieCYEZ05SsNT/WRuOsjc
+      5GPuH0VP4djjDHeymjSlCu8NQzDkhRVVBJeg9PoIpwRU1dPAdoNLwll68F1zEJH2
+      hB8D9uGYXpO2uPp1io6aHZYJ5f35jHcp0rR0zswcaW4W7eS5b1ljAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR/NUo1
+      ftOAvTleP2PYegUuoWVQ3DAfBgNVHSMEGDAWgBR/NUo1ftOAvTleP2PYegUuoWVQ
+      3DANBgkqhkiG9w0BAQsFAAOCAQEAFb8uFxrS9l3EURiumryIAKgaSh6uToOaYUk1
+      /I95h0bqjkExB9AE0xP+CC7hydZFkZobw/heCZremX9E0iaewnRM7PbdupQJJLtY
+      1IOrV8WNP5ePZJEeW7n8WCKsTN8r6IyNxTrhz5tK3GtC/1F/KLFQrRuHobemLN5x
+      jQ3X1QjLas8ElkxTMvr7XVK24+smJq5XSkbE5R+W9BKXwfarvu6HwGH7DNSOJU5F
+      BYbPAKoWUAlAvLE7r3UIWMf1DCvobpt28+a12f+qDYjHItocNdVK8kh2uRhlYOjd
+      +cT8/iQj8lA46ZdqnYp8IbWYyRtNnE0fUHiRNSrPBh/D56MQcg==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      service.beta.openshift.io/inject-cabundle: "true"
+    creationTimestamp: "2024-04-25T21:37:43Z"
+    name: openshift-service-ca.crt
+    namespace: minecraft
+    resourceVersion: "33122"
+    uid: 510da472-9a1d-426d-80b9-b9cc178e2f76
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIUt4nJdhvPmEwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTcxNDA3NzgwNjAe
+      Fw0yNDA0MjUyMDQzMjVaFw0yNjA2MjQyMDQzMjZaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE3MTQwNzc4MDYwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCgASsthyAqOyCIXJYwRXoGkZ9HeFkyAjc
+      hTmTmiKMgCTP/bsJaNpXiqwskYY5xYyfTA/YKY86I0snsNSepiWsSDmRlYR+5Zwf
+      pCaozXF9xHe72lh1Y5iOV+o5UG9Y8fK6PrqabXC3yMRNO9BoGibD3vWAeBvgh8iP
+      euq1tZHNuSqwLItCiQD9PMcVrGc0gkd6LE926qf2n81lieCYEZ05SsNT/WRuOsjc
+      5GPuH0VP4djjDHeymjSlCu8NQzDkhRVVBJeg9PoIpwRU1dPAdoNLwll68F1zEJH2
+      hB8D9uGYXpO2uPp1io6aHZYJ5f35jHcp0rR0zswcaW4W7eS5b1ljAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR/NUo1
+      ftOAvTleP2PYegUuoWVQ3DAfBgNVHSMEGDAWgBR/NUo1ftOAvTleP2PYegUuoWVQ
+      3DANBgkqhkiG9w0BAQsFAAOCAQEAFb8uFxrS9l3EURiumryIAKgaSh6uToOaYUk1
+      /I95h0bqjkExB9AE0xP+CC7hydZFkZobw/heCZremX9E0iaewnRM7PbdupQJJLtY
+      1IOrV8WNP5ePZJEeW7n8WCKsTN8r6IyNxTrhz5tK3GtC/1F/KLFQrRuHobemLN5x
+      jQ3X1QjLas8ElkxTMvr7XVK24+smJq5XSkbE5R+W9BKXwfarvu6HwGH7DNSOJU5F
+      BYbPAKoWUAlAvLE7r3UIWMf1DCvobpt28+a12f+qDYjHItocNdVK8kh2uRhlYOjd
+      +cT8/iQj8lA46ZdqnYp8IbWYyRtNnE0fUHiRNSrPBh/D56MQcg==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T18:55:50Z"
+    name: papermc-11-ca
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: papermc-11-build
+      uid: 893ac228-4053-4a2f-a74e-2d290394ff59
+    resourceVersion: "2628356"
+    uid: a64bfc9f-80ff-4794-80f9-654884dbb023
+- apiVersion: v1
+  data:
+    ca-bundle.crt: ""
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T18:55:50Z"
+    name: papermc-11-global-ca
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: papermc-11-build
+      uid: 893ac228-4053-4a2f-a74e-2d290394ff59
+    resourceVersion: "2628359"
+    uid: 5da5ab46-4eb1-4b44-850c-db33d31952e1
+- apiVersion: v1
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T18:55:50Z"
+    name: papermc-11-sys-config
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: papermc-11-build
+      uid: 893ac228-4053-4a2f-a74e-2d290394ff59
+    resourceVersion: "2628358"
+    uid: b2d59096-4ad4-4572-9462-e1bdbff37672
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIUt4nJdhvPmEwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTcxNDA3NzgwNjAe
+      Fw0yNDA0MjUyMDQzMjVaFw0yNjA2MjQyMDQzMjZaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE3MTQwNzc4MDYwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCgASsthyAqOyCIXJYwRXoGkZ9HeFkyAjc
+      hTmTmiKMgCTP/bsJaNpXiqwskYY5xYyfTA/YKY86I0snsNSepiWsSDmRlYR+5Zwf
+      pCaozXF9xHe72lh1Y5iOV+o5UG9Y8fK6PrqabXC3yMRNO9BoGibD3vWAeBvgh8iP
+      euq1tZHNuSqwLItCiQD9PMcVrGc0gkd6LE926qf2n81lieCYEZ05SsNT/WRuOsjc
+      5GPuH0VP4djjDHeymjSlCu8NQzDkhRVVBJeg9PoIpwRU1dPAdoNLwll68F1zEJH2
+      hB8D9uGYXpO2uPp1io6aHZYJ5f35jHcp0rR0zswcaW4W7eS5b1ljAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR/NUo1
+      ftOAvTleP2PYegUuoWVQ3DAfBgNVHSMEGDAWgBR/NUo1ftOAvTleP2PYegUuoWVQ
+      3DANBgkqhkiG9w0BAQsFAAOCAQEAFb8uFxrS9l3EURiumryIAKgaSh6uToOaYUk1
+      /I95h0bqjkExB9AE0xP+CC7hydZFkZobw/heCZremX9E0iaewnRM7PbdupQJJLtY
+      1IOrV8WNP5ePZJEeW7n8WCKsTN8r6IyNxTrhz5tK3GtC/1F/KLFQrRuHobemLN5x
+      jQ3X1QjLas8ElkxTMvr7XVK24+smJq5XSkbE5R+W9BKXwfarvu6HwGH7DNSOJU5F
+      BYbPAKoWUAlAvLE7r3UIWMf1DCvobpt28+a12f+qDYjHItocNdVK8kh2uRhlYOjd
+      +cT8/iQj8lA46ZdqnYp8IbWYyRtNnE0fUHiRNSrPBh/D56MQcg==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:42:04Z"
+    name: papermc-14-ca
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: papermc-14-build
+      uid: f62bf50c-e2a9-445a-b91f-c0311ab4ab43
+    resourceVersion: "2649490"
+    uid: b9bab03f-1115-422a-ac66-f6b42268aac4
+- apiVersion: v1
+  data:
+    ca-bundle.crt: ""
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:42:04Z"
+    name: papermc-14-global-ca
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: papermc-14-build
+      uid: f62bf50c-e2a9-445a-b91f-c0311ab4ab43
+    resourceVersion: "2649494"
+    uid: 16e22d1e-2153-4895-9cf3-497c515540eb
+- apiVersion: v1
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:42:04Z"
+    name: papermc-14-sys-config
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: papermc-14-build
+      uid: f62bf50c-e2a9-445a-b91f-c0311ab4ab43
+    resourceVersion: "2649492"
+    uid: 77dd0128-dda1-4dc3-82c3-f2ff78113a58
+- apiVersion: v1
+  data:
+    banned-players.json: |-
+      [ {
+          "uuid": "81696946-0713-4b59-b208-6be9442417cb",
+          "name": "Annonamas1010",
+          "created": "2024-01-19 18:15:13 +0000",
+          "source": "§4ItxKnight§r",
+          "expires": "forever",
+          "reason": "Discord For Ban Reason"
+        },
+        {
+          "uuid": "363f2413-5842-4af2-9038-e0a3d37c3bed",
+          "name": "Pug_Is_Cool",
+          "created": "2024-01-19 18:13:27 +0000",
+          "source": "§4ItxKnight§r",
+          "expires": "forever",
+          "reason": "Discord For Ban Reason"
+        }]
+    bukkit.yml: |
+      settings:
+        allow-end: true
+        warn-on-overload: true
+        permissions-file: permissions.yml
+        update-folder: update
+        plugin-profiling: false
+        connection-throttle: 4000
+        query-plugins: true
+        deprecated-verbose: default
+        shutdown-message: Server closed
+        minimum-api: none
+        use-map-color-cache: true
+      spawn-limits:
+        monsters: 70
+        animals: 10
+        water-animals: 5
+        water-ambient: 20
+        water-underground-creature: 5
+        axolotls: 5
+        ambient: 15
+      chunk-gc:
+        period-in-ticks: 600
+      ticks-per:
+        animal-spawns: 400
+        monster-spawns: 1
+        water-spawns: 1
+        water-ambient-spawns: 1
+        water-underground-creature-spawns: 1
+        axolotl-spawns: 1
+        ambient-spawns: 1
+        autosave: 6000
+      aliases: now-in-commands.yml
+    commands.yml: |
+      command-block-overrides: []
+      ignore-vanilla-permissions: false
+      aliases:
+        icanhasbukkit:
+        - version $1-
+    help.yml: ""
+    paper-global.yml: "# This is the global configuration file for Paper.\n# As you
+      can see, there's a lot to configure. Some options may impact gameplay, so use\n#
+      with caution, and make sure you know what each option does before configuring.\n#
+      \n# If you need help with the configuration or have any questions related to
+      Paper,\n# join us in our Discord or check the docs page.\n# \n# The world configuration
+      options have been moved inside\n# their respective world folder. The files are
+      named paper-world.yml\n# \n# Docs: https://docs.papermc.io/\n# Discord: https://discord.gg/papermc\n#
+      Website: https://papermc.io/\n\n_version: 29\nblock-updates:\n  disable-chorus-plant-updates:
+      false\n  disable-mushroom-block-updates: false\n  disable-noteblock-updates:
+      false\n  disable-tripwire-updates: false\nchunk-loading-advanced:\n  auto-config-send-distance:
+      true\n  player-max-concurrent-chunk-generates: 0\n  player-max-concurrent-chunk-loads:
+      0\nchunk-loading-basic:\n  player-max-chunk-generate-rate: -1.0\n  player-max-chunk-load-rate:
+      100.0\n  player-max-chunk-send-rate: 75.0\nchunk-system:\n  gen-parallelism:
+      default\n  io-threads: -1\n  worker-threads: -1\ncollisions:\n  enable-player-collisions:
+      true\n  send-full-pos-for-hard-colliding-entities: true\ncommands:\n  fix-target-selector-tag-completion:
+      true\n  suggest-player-names-when-null-tab-completions: true\n  time-command-affects-all-worlds:
+      false\nconsole:\n  enable-brigadier-completions: true\n  enable-brigadier-highlighting:
+      true\n  has-all-permissions: false\nitem-validation:\n  book:\n    author: 8192\n
+      \   page: 16384\n    title: 8192\n  book-size:\n    page-max: 2560\n    total-multiplier:
+      0.98\n  display-name: 8192\n  lore-line: 8192\n  resolve-selectors-in-books:
+      false\nlogging:\n  deobfuscate-stacktraces: true\nmessages:\n  kick:\n    authentication-servers-down:
+      <lang:multiplayer.disconnect.authservers_down>\n    connection-throttle: Connection
+      throttled! Please wait before reconnecting.\n    flying-player: <lang:multiplayer.disconnect.flying>\n
+      \   flying-vehicle: <lang:multiplayer.disconnect.flying>\n  no-permission: <red>I'm
+      sorry, but you do not have permission to perform this command.\n    Please contact
+      the server administrators if you believe that this is in error.\n  use-display-name-in-quit-message:
+      false\nmisc:\n  chat-threads:\n    chat-executor-core-size: -1\n    chat-executor-max-size:
+      -1\n  compression-level: default\n  fix-entity-position-desync: true\n  load-permissions-yml-before-plugins:
+      true\n  max-joins-per-tick: 5\n  region-file-cache-size: 256\n  strict-advancement-dimension-check:
+      false\n  use-alternative-luck-formula: false\n  use-dimension-type-for-custom-spawners:
+      false\npacket-limiter:\n  all-packets:\n    action: KICK\n    interval: 7.0\n
+      \   max-packet-rate: 500.0\n  kick-message: <red><lang:disconnect.exceeded_packet_rate>\n
+      \ overrides:\n    ServerboundPlaceRecipePacket:\n      action: DROP\n      interval:
+      4.0\n      max-packet-rate: 5.0\nplayer-auto-save:\n  max-per-tick: -1\n  rate:
+      -1\nproxies:\n  bungee-cord:\n    online-mode: true\n  proxy-protocol: false\n
+      \ velocity:\n    enabled: true\n    online-mode: true\n    secret: ''\nscoreboards:\n
+      \ save-empty-scoreboard-teams: false\n  track-plugin-scoreboards: false\nspam-limiter:\n
+      \ incoming-packet-threshold: 300\n  recipe-spam-increment: 1\n  recipe-spam-limit:
+      20\n  tab-spam-increment: 1\n  tab-spam-limit: 500\ntimings:\n  enabled: false\n
+      \ hidden-config-entries:\n  - database\n  - proxies.velocity.secret\n  history-interval:
+      300\n  history-length: 3600\n  server-name: Unknown Server\n  server-name-privacy:
+      false\n  url: https://timings.aikar.co/\n  verbose: true\nunsupported-settings:\n
+      \ allow-grindstone-overstacking: false\n  allow-headless-pistons: false\n  allow-permanent-block-break-exploits:
+      false\n  allow-piston-duplication: false\n  allow-tripwire-disarming-exploits:
+      false\n  allow-unsafe-end-portal-teleportation: false\n  compression-format:
+      ZLIB\n  perform-username-validation: true\nwatchdog:\n  early-warning-delay:
+      10000\n  early-warning-every: 5000\n"
+    paper-world-defaults.yml: "# This is the world defaults configuration file for
+      Paper.\n# As you can see, there's a lot to configure. Some options may impact
+      gameplay, so use\n# with caution, and make sure you know what each option does
+      before configuring.\n# \n# If you need help with the configuration or have any
+      questions related to Paper,\n# join us in our Discord or check the docs page.\n#
+      \n# Configuration options here apply to all worlds, unless you specify overrides
+      inside\n# the world-specific config file inside each world folder.\n# \n# Docs:
+      https://docs.papermc.io/\n# Discord: https://discord.gg/papermc\n# Website:
+      https://papermc.io/\n\n_version: 30\nanticheat:\n  anti-xray:\n    enabled:
+      false\n    engine-mode: 1\n    hidden-blocks:\n    - copper_ore\n    - deepslate_copper_ore\n
+      \   - raw_copper_block\n    - gold_ore\n    - deepslate_gold_ore\n    - iron_ore\n
+      \   - deepslate_iron_ore\n    - raw_iron_block\n    - coal_ore\n    - deepslate_coal_ore\n
+      \   - lapis_ore\n    - deepslate_lapis_ore\n    - mossy_cobblestone\n    - obsidian\n
+      \   - chest\n    - diamond_ore\n    - deepslate_diamond_ore\n    - redstone_ore\n
+      \   - deepslate_redstone_ore\n    - clay\n    - emerald_ore\n    - deepslate_emerald_ore\n
+      \   - ender_chest\n    lava-obscures: false\n    max-block-height: 64\n    replacement-blocks:\n
+      \   - stone\n    - oak_planks\n    - deepslate\n    update-radius: 2\n    use-permission:
+      false\n  obfuscation:\n    items:\n      hide-durability: false\n      hide-itemmeta:
+      false\n      hide-itemmeta-with-visual-effects: false\nchunks:\n  auto-save-interval:
+      default\n  delay-chunk-unloads-by: 10s\n  entity-per-chunk-save-limit:\n    arrow:
+      -1\n    ender_pearl: -1\n    experience_orb: -1\n    fireball: -1\n    small_fireball:
+      -1\n    snowball: -1\n  fixed-chunk-inhabited-time: -1\n  flush-regions-on-save:
+      false\n  max-auto-save-chunks-per-tick: 24\n  prevent-moving-into-unloaded-chunks:
+      false\ncollisions:\n  allow-player-cramming-damage: false\n  allow-vehicle-collisions:
+      true\n  fix-climbing-bypassing-cramming-rule: false\n  max-entity-collisions:
+      8\n  only-players-collide: false\ncommand-blocks:\n  force-follow-perm-level:
+      true\n  permissions-level: 2\nentities:\n  armor-stands:\n    do-collision-entity-lookups:
+      true\n    tick: true\n  behavior:\n    allow-spider-world-border-climbing: true\n
+      \   baby-zombie-movement-modifier: 0.5\n    disable-chest-cat-detection: false\n
+      \   disable-creeper-lingering-effect: false\n    disable-player-crits: false\n
+      \   door-breaking-difficulty:\n      husk:\n      - HARD\n      vindicator:\n
+      \     - NORMAL\n      - HARD\n      zombie:\n      - HARD\n      zombie_villager:\n
+      \     - HARD\n      zombified_piglin:\n      - HARD\n    ender-dragons-death-always-places-dragon-egg:
+      false\n    experience-merge-max-value: -1\n    mobs-can-always-pick-up-loot:\n
+      \     skeletons: false\n      zombies: false\n    nerf-pigmen-from-nether-portals:
+      false\n    parrots-are-unaffected-by-player-movement: false\n    phantoms-do-not-spawn-on-creative-players:
+      true\n    phantoms-only-attack-insomniacs: true\n    phantoms-spawn-attempt-max-seconds:
+      119\n    phantoms-spawn-attempt-min-seconds: 60\n    piglins-guard-chests: true\n
+      \   pillager-patrols:\n      disable: false\n      spawn-chance: 0.2\n      spawn-delay:\n
+      \       per-player: false\n        ticks: 12000\n      start:\n        day:
+      5\n        per-player: false\n    player-insomnia-start-ticks: 72000\n    should-remove-dragon:
+      false\n    spawner-nerfed-mobs-should-jump: false\n    zombie-villager-infection-chance:
+      default\n    zombies-target-turtle-eggs: true\n  entities-target-with-follow-range:
+      false\n  markers:\n    tick: true\n  mob-effects:\n    immune-to-wither-effect:\n
+      \     wither: true\n      wither-skeleton: true\n    spiders-immune-to-poison-effect:
+      true\n    undead-immune-to-certain-effects: true\n  sniffer:\n    boosted-hatch-time:
+      default\n    hatch-time: default\n  spawning:\n    all-chunks-are-slime-chunks:
+      false\n    alt-item-despawn-rate:\n      enabled: false\n      items:\n        cobblestone:
+      300\n    count-all-mobs-for-spawning: false\n    creative-arrow-despawn-rate:
+      default\n    despawn-ranges:\n      ambient:\n        hard: 128\n        soft:
+      32\n      axolotls:\n        hard: 128\n        soft: 32\n      creature:\n
+      \       hard: 128\n        soft: 32\n      misc:\n        hard: 128\n        soft:
+      32\n      monster:\n        hard: 128\n        soft: 32\n      underground_water_creature:\n
+      \       hard: 128\n        soft: 32\n      water_ambient:\n        hard: 64\n
+      \       soft: 32\n      water_creature:\n        hard: 128\n        soft: 32\n
+      \   disable-mob-spawner-spawn-egg-transformation: false\n    duplicate-uuid:\n
+      \     mode: SAFE_REGEN\n      safe-regen-delete-range: 32\n    filter-bad-tile-entity-nbt-from-falling-blocks:
+      true\n    filtered-entity-tag-nbt-paths:\n    - Pos\n    - Motion\n    - SleepingX\n
+      \   - SleepingY\n    - SleepingZ\n    iron-golems-can-spawn-in-air: false\n
+      \   monster-spawn-max-light-level: default\n    non-player-arrow-despawn-rate:
+      default\n    per-player-mob-spawns: true\n    scan-for-legacy-ender-dragon:
+      true\n    skeleton-horse-thunder-spawn-chance: default\n    slime-spawn-height:\n
+      \     slime-chunk:\n        maximum: 40.0\n      surface-biome:\n        maximum:
+      70.0\n        minimum: 50.0\n    spawn-limits:\n      ambient: -1\n      axolotls:
+      -1\n      creature: -1\n      monster: -1\n      underground_water_creature:
+      -1\n      water_ambient: -1\n      water_creature: -1\n    ticks-per-spawn:\n
+      \     ambient: -1\n      axolotls: -1\n      creature: -1\n      monster: -1\n
+      \     underground_water_creature: -1\n      water_ambient: -1\n      water_creature:
+      -1\n    wandering-trader:\n      spawn-chance-failure-increment: 25\n      spawn-chance-max:
+      75\n      spawn-chance-min: 25\n      spawn-day-length: 24000\n      spawn-minute-length:
+      1200\n    wateranimal-spawn-height:\n      maximum: default\n      minimum:
+      default\n  tracking-range-y:\n    animal: default\n    display: default\n    enabled:
+      false\n    misc: default\n    monster: default\n    other: default\n    player:
+      default\nenvironment:\n  disable-explosion-knockback: false\n  disable-ice-and-snow:
+      false\n  disable-teleportation-suffocation-check: false\n  disable-thunder:
+      false\n  fire-tick-delay: 30\n  frosted-ice:\n    delay:\n      max: 40\n      min:
+      20\n    enabled: true\n  generate-flat-bedrock: false\n  locate-structures-outside-world-border:
+      false\n  max-block-ticks: 65536\n  max-fluid-ticks: 65536\n  nether-ceiling-void-damage-height:
+      disabled\n  optimize-explosions: false\n  portal-create-radius: 16\n  portal-search-radius:
+      128\n  portal-search-vanilla-dimension-scaling: true\n  treasure-maps:\n    enabled:
+      true\n    find-already-discovered:\n      loot-tables: default\n      villager-trade:
+      false\n  water-over-lava-flow-speed: 5\nfeature-seeds:\n  generate-random-seeds-for-all:
+      false\nfishing-time-range:\n  maximum: 600\n  minimum: 100\nfixes:\n  disable-unloaded-chunk-enderpearl-exploit:
+      true\n  falling-block-height-nerf: disabled\n  fix-items-merging-through-walls:
+      false\n  prevent-tnt-from-moving-in-water: false\n  split-overstacked-loot:
+      true\n  tnt-entity-height-nerf: disabled\nhopper:\n  cooldown-when-full: true\n
+      \ disable-move-event: false\n  ignore-occluding-blocks: false\nlootables:\n
+      \ auto-replenish: false\n  max-refills: -1\n  refresh-max: 2d\n  refresh-min:
+      12h\n  reset-seed-on-fill: true\n  restrict-player-reloot: true\n  restrict-player-reloot-time:
+      disabled\nmaps:\n  item-frame-cursor-limit: 128\n  item-frame-cursor-update-interval:
+      10\nmax-growth-height:\n  bamboo:\n    max: 16\n    min: 11\n  cactus: 3\n  reeds:
+      3\nmisc:\n  disable-end-credits: false\n  disable-relative-projectile-velocity:
+      false\n  disable-sprint-interruption-on-attack: false\n  light-queue-size: 20\n
+      \ max-leash-distance: 10.0\n  redstone-implementation: VANILLA\n  shield-blocking-delay:
+      5\n  show-sign-click-command-failure-msgs-to-player: false\n  update-pathfinding-on-block-update:
+      true\nscoreboards:\n  allow-non-player-entities-on-scoreboards: true\n  use-vanilla-world-scoreboard-name-coloring:
+      false\nspawn:\n  allow-using-signs-inside-spawn-protection: false\n  keep-spawn-loaded:
+      true\n  keep-spawn-loaded-range: 10\ntick-rates:\n  behavior:\n    villager:\n
+      \     validatenearbypoi: -1\n  container-update: 1\n  dry-farmland: 1\n  grass-spread:
+      1\n  mob-spawner: 1\n  sensor:\n    villager:\n      secondarypoisensor: 40\n
+      \ wet-farmland: 1\nunsupported-settings:\n  disable-world-ticking-when-empty:
+      false\n  fix-invulnerable-end-crystal-exploit: true\n"
+    permissions.yml: ""
+    server.properties: |
+      #Minecraft server properties
+      #Mon Apr 29 13:34:01 EDT 2024
+      allow-flight=false
+      allow-nether=true
+      broadcast-console-to-ops=true
+      broadcast-rcon-to-ops=true
+      debug=false
+      difficulty=easy
+      enable-command-block=false
+      enable-jmx-monitoring=true
+      enable-query=false
+      enable-rcon=true
+      enable-status=true
+      enforce-secure-profile=true
+      enforce-whitelist=false
+      entity-broadcast-range-percentage=100
+      force-gamemode=false
+      function-permission-level=2
+      gamemode=survival
+      generate-structures=true
+      generator-settings={}
+      hardcore=false
+      hide-online-players=false
+      initial-disabled-packs=
+      initial-enabled-packs=vanilla
+      level-name=world
+      level-seed=
+      level-type=minecraft\:normal
+      log-ips=true
+      max-chained-neighbor-updates=1000000
+      max-players=20
+      max-tick-time=60000
+      max-world-size=29999984
+      motd=A Minecraft Server
+      network-compression-threshold=256
+      online-mode=false
+      op-permission-level=4
+      player-idle-timeout=0
+      prevent-proxy-connections=false
+      pvp=true
+      query.port=25565
+      rate-limit=0
+      rcon.password=
+      rcon.port=25575
+      require-resource-pack=false
+      resource-pack=
+      resource-pack-id=
+      resource-pack-prompt=
+      resource-pack-sha1=
+      server-ip=
+      server-port=25565
+      simulation-distance=10
+      spawn-animals=true
+      spawn-monsters=true
+      spawn-npcs=true
+      spawn-protection=16
+      sync-chunk-writes=true
+      text-filtering-config=
+      use-native-transport=true
+      view-distance=10
+      white-list=false
+    spigot.yml: |
+      # This is the main configuration file for Spigot.
+      # As you can see, there's tons to configure. Some options may impact gameplay, so use
+      # with caution, and make sure you know what each option does before configuring.
+      # For a reference for any variable inside this file, check out the Spigot wiki at
+      # http://www.spigotmc.org/wiki/spigot-configuration/
+      #
+      # If you need help with the configuration or have any questions related to Spigot,
+      # join us at the Discord or drop by our forums and leave a post.
+      #
+      # Discord: https://www.spigotmc.org/go/discord
+      # Forums: http://www.spigotmc.org/
+
+      messages:
+        whitelist: You are not whitelisted on this server!
+        unknown-command: Unknown command. Type "/help" for help.
+        server-full: The server is full!
+        outdated-client: Outdated client! Please use {0}
+        outdated-server: Outdated server! I'm still on {0}
+        restart: Server is restarting
+      advancements:
+        disable-saving: false
+        disabled:
+        - minecraft:story/disabled
+      settings:
+        timeout-time: 60
+        restart-on-crash: true
+        restart-script: ./start.sh
+        save-user-cache-on-stop-only: false
+        sample-count: 12
+        bungeecord: false
+        player-shuffle: 0
+        user-cache-size: 1000
+        moved-wrongly-threshold: 0.0625
+        moved-too-quickly-multiplier: 10.0
+        netty-threads: 4
+        attribute:
+          maxHealth:
+            max: 2048.0
+          movementSpeed:
+            max: 2048.0
+          attackDamage:
+            max: 2048.0
+        log-villager-deaths: true
+        log-named-deaths: true
+        debug: false
+      world-settings:
+        default:
+          below-zero-generation-in-existing-chunks: true
+          view-distance: default
+          simulation-distance: default
+          thunder-chance: 100000
+          merge-radius:
+            item: 2.5
+            exp: 3.0
+          mob-spawn-range: 8
+          item-despawn-rate: 6000
+          arrow-despawn-rate: 1200
+          trident-despawn-rate: 1200
+          nerf-spawner-mobs: false
+          enable-zombie-pigmen-portal-spawns: true
+          wither-spawn-sound-radius: 0
+          end-portal-sound-radius: 0
+          hanging-tick-frequency: 100
+          growth:
+            cactus-modifier: 100
+            cane-modifier: 100
+            melon-modifier: 100
+            mushroom-modifier: 100
+            pumpkin-modifier: 100
+            sapling-modifier: 100
+            beetroot-modifier: 100
+            carrot-modifier: 100
+            potato-modifier: 100
+            torchflower-modifier: 100
+            wheat-modifier: 100
+            netherwart-modifier: 100
+            vine-modifier: 100
+            cocoa-modifier: 100
+            bamboo-modifier: 100
+            sweetberry-modifier: 100
+            kelp-modifier: 100
+            twistingvines-modifier: 100
+            weepingvines-modifier: 100
+            cavevines-modifier: 100
+            glowberry-modifier: 100
+            pitcherplant-modifier: 100
+          entity-activation-range:
+            animals: 32
+            monsters: 32
+            raiders: 48
+            misc: 16
+            water: 16
+            villagers: 32
+            flying-monsters: 32
+            wake-up-inactive:
+              animals-max-per-tick: 4
+              animals-every: 1200
+              animals-for: 100
+              monsters-max-per-tick: 8
+              monsters-every: 400
+              monsters-for: 100
+              villagers-max-per-tick: 4
+              villagers-every: 600
+              villagers-for: 100
+              flying-monsters-max-per-tick: 8
+              flying-monsters-every: 200
+              flying-monsters-for: 100
+            villagers-work-immunity-after: 100
+            villagers-work-immunity-for: 20
+            villagers-active-for-panic: true
+            tick-inactive-villagers: true
+            ignore-spectators: false
+          entity-tracking-range:
+            players: 48
+            animals: 48
+            monsters: 48
+            misc: 32
+            display: 128
+            other: 64
+          ticks-per:
+            hopper-transfer: 8
+            hopper-check: 1
+          hopper-amount: 1
+          hopper-can-load-chunks: false
+          dragon-death-sound-radius: 0
+          seed-village: 10387312
+          seed-desert: 14357617
+          seed-igloo: 14357618
+          seed-jungle: 14357619
+          seed-swamp: 14357620
+          seed-monument: 10387313
+          seed-shipwreck: 165745295
+          seed-ocean: 14357621
+          seed-outpost: 165745296
+          seed-endcity: 10387313
+          seed-slime: 987234911
+          seed-nether: 30084232
+          seed-mansion: 10387319
+          seed-fossil: 14357921
+          seed-portal: 34222645
+          seed-ancientcity: 20083232
+          seed-trailruins: 83469867
+          seed-trialchambers: 94251327
+          seed-buriedtreasure: 10387320
+          seed-mineshaft: default
+          seed-stronghold: default
+          hunger:
+            jump-walk-exhaustion: 0.05
+            jump-sprint-exhaustion: 0.2
+            combat-exhaustion: 0.1
+            regen-exhaustion: 6.0
+            swim-multiplier: 0.01
+            sprint-multiplier: 0.1
+            other-multiplier: 0.0
+          max-tnt-per-tick: 100
+          max-tick-time:
+            tile: 50
+            entity: 50
+          zombie-aggressive-towards-villager: true
+          verbose: false
+      commands:
+        tab-complete: 0
+        send-namespaced: true
+        log: true
+        spam-exclusions:
+        - /skill
+        silent-commandblock-console: false
+        replace-commands:
+        - setblock
+        - summon
+        - testforblock
+        - tellraw
+      players:
+        disable-saving: false
+      config-version: 12
+      stats:
+        disable-saving: false
+        forced-stats: {}
+    whitelist.json: |-
+      [
+        {
+          "uuid": "c4c863f4-762f-475c-bc26-7185a686ca6c",
+          "name": "phoenixm77"
+        },
+        {
+          "uuid": "857a8fd5-de4a-4358-936d-08cd1138ddac",
+          "name": "BloodLynx11"
+        },
+        {
+          "uuid": "27aafe7a-c853-4d37-8eb0-4dcec9896c0d",
+          "name": "Wolfknight6162"
+        },
+        {
+          "uuid": "76708930-886e-4a5b-b5f3-996ed3b161ff",
+          "name": "catypult99"
+        },
+        {
+          "uuid": "da83128c-0d9c-4c76-ba57-333c84ab2475",
+          "name": "ACrumblingEgo"
+        },
+        {
+          "uuid": "b0f9a106-7640-43f4-a873-4bf8f9b5f575",
+          "name": "MinecraftKKnight"
+        },
+        {
+          "uuid": "204ace9e-d014-4128-aece-9297a60123b1",
+          "name": "WanderingPandaYT"
+        },
+        {
+          "uuid": "8ec0b9e5-4b6c-4515-bb8b-2c746e310aca",
+          "name": "LOLbit0010"
+        },
+        {
+          "uuid": "479f15af-efed-49f2-8e10-50ed23812ab0",
+          "name": "JustPureLuckYT"
+        },
+        {
+          "uuid": "410ef0c5-77cf-4be9-b716-2a28413b7c62",
+          "name": "RedFireRanger1"
+        },
+        {
+          "uuid": "70c6255b-2143-4c4c-83f5-8c186a31a0dd",
+          "name": "Nateman505"
+        },
+        {
+          "uuid": "fed940ee-f15c-4727-8724-eb2914ae3fdc",
+          "name": "Tanks1748"
+        },
+        {
+          "uuid": "cf025c88-83ee-453c-975d-1702bd7e8160",
+          "name": "BGaming_4472"
+        },
+        {
+          "uuid": "1249e839-394f-4151-bae7-a871d8200a16",
+          "name": "Cyn1cal_"
+        },
+        {
+          "uuid": "4a588230-c91a-43dc-9d4e-8c695cbe01b8",
+          "name": "Lagged2Death"
+        }
+      ]
+  immutable: false
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T14:29:37Z"
+    name: papermc-configs
+    namespace: minecraft
+    resourceVersion: "2618153"
+    uid: 8f160c27-227c-42a8-abce-5049e192358d
+- apiVersion: v1
+  data:
+    plugins.json: |-
+      {
+        "plugins": [{
+          "name": "luckperms",
+          "url": "https://download.luckperms.net/1539/bukkit/loader/LuckPerms-Bukkit-5.4.126.jar"
+        },{
+          "name": "vault",
+          "url": "https://github.com/MilkBowl/Vault/releases/download/1.7.3/Vault.jar"
+        },{
+          "name": "crazyauctions",
+          "url": "https://github.com/plugingraveyard/CrazyAuctions/releases/download/v1.3.2/CrazyAuctions-1.3.2.jar"
+        },{
+          "name": "essentialsx-core",
+          "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.21.0-dev+81-cde7184.jar"
+        },{
+          "name": "essentialsx-chat",
+          "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXChat-2.21.0-dev+81-cde7184.jar"
+        },{
+          "name": "essentialsx-spawn",
+          "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXSpawn-2.21.0-dev+81-cde7184.jar"
+        },{
+          "name": "essentialsx-protect",
+          "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXProtect-2.21.0-dev+81-cde7184.jar"
+        },{
+          "name": "worldedit",
+          "url": "https://cdn.modrinth.com/data/1u6JkXh5/versions/JzCMkGax/worldedit-bukkit-7.3.0.jar"
+        }]
+      }
+  immutable: false
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T16:24:22Z"
+    name: papermc-plugins
+    namespace: minecraft
+    resourceVersion: "2633338"
+    uid: 2538c59e-ff2d-441a-b6ac-1c6087dc4067
+- apiVersion: v1
+  data:
+    velocity.toml: |
+      # Config version. Do not change this
+      config-version = "2.7"
+
+      # What port should the proxy be bound to? By default, we'll bind to all addresses on port 25577.
+      bind = "0.0.0.0:25577"
+
+      # What should be the MOTD? This gets displayed when the player adds your server to
+      # their server list. Only MiniMessage format is accepted.
+      motd = "<#09add3>A Velocity Server"
+
+      # What should we display for the maximum number of players? (Velocity does not support a cap
+      # on the number of players online.)
+      show-max-players = 500
+
+      # Should we authenticate players with Mojang? By default, this is on.
+      online-mode = true
+
+      # Should the proxy enforce the new public key security standard? By default, this is on.
+      force-key-authentication = true
+
+      # If client's ISP/AS sent from this proxy is different from the one from Mojang's
+      # authentication server, the player is kicked. This disallows some VPN and proxy
+      # connections but is a weak form of protection.
+      prevent-client-proxy-connections = false
+
+      # Should we forward IP addresses and other data to backend servers?
+      # Available options:
+      # - "none":        No forwarding will be done. All players will appear to be connecting
+      #                  from the proxy and will have offline-mode UUIDs.
+      # - "legacy":      Forward player IPs and UUIDs in a BungeeCord-compatible format. Use this
+      #                  if you run servers using Minecraft 1.12 or lower.
+      # - "bungeeguard": Forward player IPs and UUIDs in a format supported by the BungeeGuard
+      #                  plugin. Use this if you run servers using Minecraft 1.12 or lower, and are
+      #                  unable to implement network level firewalling (on a shared host).
+      # - "modern":      Forward player IPs and UUIDs as part of the login process using
+      #                  Velocity's native forwarding. Only applicable for Minecraft 1.13 or higher.
+      player-info-forwarding-mode = "modern"
+
+      # If you are using modern or BungeeGuard IP forwarding, configure a file that contains a unique secret here.
+      # The file is expected to be UTF-8 encoded and not empty.
+      forwarding-secret-file = "forwarding.secret"
+
+      # Announce whether or not your server supports Forge. If you run a modded server, we
+      # suggest turning this on.
+      #
+      # If your network runs one modpack consistently, consider using ping-passthrough = "mods"
+      # instead for a nicer display in the server list.
+      announce-forge = false
+
+      # If enabled (default is false) and the proxy is in online mode, Velocity will kick
+      # any existing player who is online if a duplicate connection attempt is made.
+      kick-existing-players = false
+
+      # Should Velocity pass server list ping requests to a backend server?
+      # Available options:
+      # - "disabled":    No pass-through will be done. The velocity.toml and server-icon.png
+      #                  will determine the initial server list ping response.
+      # - "mods":        Passes only the mod list from your backend server into the response.
+      #                  The first server in your try list (or forced host) with a mod list will be
+      #                  used. If no backend servers can be contacted, Velocity won't display any
+      #                  mod information.
+      # - "description": Uses the description and mod list from the backend server. The first
+      #                  server in the try (or forced host) list that responds is used for the
+      #                  description and mod list.
+      # - "all":         Uses the backend server's response as the proxy response. The Velocity
+      #                  configuration is used if no servers could be contacted.
+      ping-passthrough = "DISABLED"
+
+      # If not enabled (default is true) player IP addresses will be replaced by <ip address withheld> in logs
+      enable-player-address-logging = true
+
+      [servers]
+      # Configure your servers here. Each key represents the server's name, and the value
+      # represents the IP address of the server to connect to.
+      only = "papermc.minecraft.svc.cluster.local:25565"
+
+      # In what order we should try servers when a player logs in or is kicked from a server.
+      try = [
+          "only"
+      ]
+      [forced-hosts]
+      # Configure your forced hosts here.
+      "minecraft.schcal.org" = [
+        "only"
+      ]
+
+      [advanced]
+      # How large a Minecraft packet has to be before we compress it. Setting this to zero will
+      # compress all packets, and setting it to -1 will disable compression entirely.
+      compression-threshold = 256
+
+      # How much compression should be done (from 0-9). The default is -1, which uses the
+      # default level of 6.
+      compression-level = -1
+
+      # How fast (in milliseconds) are clients allowed to connect after the last connection? By
+      # default, this is three seconds. Disable this by setting this to 0.
+      login-ratelimit = 3000
+
+      # Specify a custom timeout for connection timeouts here. The default is five seconds.
+      connection-timeout = 5000
+
+      # Specify a read timeout for connections here. The default is 30 seconds.
+      read-timeout = 30000
+
+      # Enables compatibility with HAProxy's PROXY protocol. If you don't know what this is for, then
+      # don't enable it.
+      haproxy-protocol = false
+
+      # Enables TCP fast open support on the proxy. Requires the proxy to run on Linux.
+      tcp-fast-open = true
+
+      # Enables BungeeCord plugin messaging channel support on Velocity.
+      bungee-plugin-message-channel = true
+
+      # Shows ping requests to the proxy from clients.
+      show-ping-requests = false
+
+      # By default, Velocity will attempt to gracefully handle situations where the user unexpectedly
+      # loses connection to the server without an explicit disconnect message by attempting to fall the
+      # user back, except in the case of read timeouts. BungeeCord will disconnect the user instead. You
+      # can disable this setting to use the BungeeCord behavior.
+      failover-on-unexpected-server-disconnect = true
+
+      # Declares the proxy commands to 1.13+ clients.
+      announce-proxy-commands = true
+
+      # Enables the logging of commands
+      log-command-executions = false
+
+      # Enables logging of player connections when connecting to the proxy, switching servers
+      # and disconnecting from the proxy.
+      log-player-connections = true
+
+      # Allows players transferred from other hosts via the
+      # Transfer packet (Minecraft 1.20.5) to be received.
+      accepts-transfers = false
+
+      [query]
+      # Whether to enable responding to GameSpy 4 query responses or not.
+      enabled = false
+
+      # If query is enabled, on what port should the query protocol listen on?
+      port = 25577
+
+      # This is the map name that is reported to the query services.
+      map = "Velocity"
+
+      # Whether plugins should be shown in query response by default or not
+      show-plugins = false
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-04-27T00:28:41Z"
+    name: velocity
+    namespace: minecraft
+    resourceVersion: "2129493"
+    uid: 2ed74da1-7e1f-483f-b03c-53d74331b32e
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIUt4nJdhvPmEwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTcxNDA3NzgwNjAe
+      Fw0yNDA0MjUyMDQzMjVaFw0yNjA2MjQyMDQzMjZaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE3MTQwNzc4MDYwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCgASsthyAqOyCIXJYwRXoGkZ9HeFkyAjc
+      hTmTmiKMgCTP/bsJaNpXiqwskYY5xYyfTA/YKY86I0snsNSepiWsSDmRlYR+5Zwf
+      pCaozXF9xHe72lh1Y5iOV+o5UG9Y8fK6PrqabXC3yMRNO9BoGibD3vWAeBvgh8iP
+      euq1tZHNuSqwLItCiQD9PMcVrGc0gkd6LE926qf2n81lieCYEZ05SsNT/WRuOsjc
+      5GPuH0VP4djjDHeymjSlCu8NQzDkhRVVBJeg9PoIpwRU1dPAdoNLwll68F1zEJH2
+      hB8D9uGYXpO2uPp1io6aHZYJ5f35jHcp0rR0zswcaW4W7eS5b1ljAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR/NUo1
+      ftOAvTleP2PYegUuoWVQ3DAfBgNVHSMEGDAWgBR/NUo1ftOAvTleP2PYegUuoWVQ
+      3DANBgkqhkiG9w0BAQsFAAOCAQEAFb8uFxrS9l3EURiumryIAKgaSh6uToOaYUk1
+      /I95h0bqjkExB9AE0xP+CC7hydZFkZobw/heCZremX9E0iaewnRM7PbdupQJJLtY
+      1IOrV8WNP5ePZJEeW7n8WCKsTN8r6IyNxTrhz5tK3GtC/1F/KLFQrRuHobemLN5x
+      jQ3X1QjLas8ElkxTMvr7XVK24+smJq5XSkbE5R+W9BKXwfarvu6HwGH7DNSOJU5F
+      BYbPAKoWUAlAvLE7r3UIWMf1DCvobpt28+a12f+qDYjHItocNdVK8kh2uRhlYOjd
+      +cT8/iQj8lA46ZdqnYp8IbWYyRtNnE0fUHiRNSrPBh/D56MQcg==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:49:06Z"
+    name: velocity-4-ca
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: velocity-4-build
+      uid: 02c40e3f-909e-49e0-a68c-d8e5dc441270
+    resourceVersion: "2651083"
+    uid: 59224a43-f071-4a4b-8fe5-ca079c7b33a9
+- apiVersion: v1
+  data:
+    ca-bundle.crt: ""
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:49:06Z"
+    name: velocity-4-global-ca
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: velocity-4-build
+      uid: 02c40e3f-909e-49e0-a68c-d8e5dc441270
+    resourceVersion: "2651087"
+    uid: 798896d4-38db-4187-9b54-5922ecc6430b
+- apiVersion: v1
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:49:06Z"
+    name: velocity-4-sys-config
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: velocity-4-build
+      uid: 02c40e3f-909e-49e0-a68c-d8e5dc441270
+    resourceVersion: "2651085"
+    uid: 68552669-0633-481a-b4a6-9de019896e5b
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIUt4nJdhvPmEwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTcxNDA3NzgwNjAe
+      Fw0yNDA0MjUyMDQzMjVaFw0yNjA2MjQyMDQzMjZaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE3MTQwNzc4MDYwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCgASsthyAqOyCIXJYwRXoGkZ9HeFkyAjc
+      hTmTmiKMgCTP/bsJaNpXiqwskYY5xYyfTA/YKY86I0snsNSepiWsSDmRlYR+5Zwf
+      pCaozXF9xHe72lh1Y5iOV+o5UG9Y8fK6PrqabXC3yMRNO9BoGibD3vWAeBvgh8iP
+      euq1tZHNuSqwLItCiQD9PMcVrGc0gkd6LE926qf2n81lieCYEZ05SsNT/WRuOsjc
+      5GPuH0VP4djjDHeymjSlCu8NQzDkhRVVBJeg9PoIpwRU1dPAdoNLwll68F1zEJH2
+      hB8D9uGYXpO2uPp1io6aHZYJ5f35jHcp0rR0zswcaW4W7eS5b1ljAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR/NUo1
+      ftOAvTleP2PYegUuoWVQ3DAfBgNVHSMEGDAWgBR/NUo1ftOAvTleP2PYegUuoWVQ
+      3DANBgkqhkiG9w0BAQsFAAOCAQEAFb8uFxrS9l3EURiumryIAKgaSh6uToOaYUk1
+      /I95h0bqjkExB9AE0xP+CC7hydZFkZobw/heCZremX9E0iaewnRM7PbdupQJJLtY
+      1IOrV8WNP5ePZJEeW7n8WCKsTN8r6IyNxTrhz5tK3GtC/1F/KLFQrRuHobemLN5x
+      jQ3X1QjLas8ElkxTMvr7XVK24+smJq5XSkbE5R+W9BKXwfarvu6HwGH7DNSOJU5F
+      BYbPAKoWUAlAvLE7r3UIWMf1DCvobpt28+a12f+qDYjHItocNdVK8kh2uRhlYOjd
+      +cT8/iQj8lA46ZdqnYp8IbWYyRtNnE0fUHiRNSrPBh/D56MQcg==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:50:34Z"
+    name: velocity-5-ca
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: velocity-5-build
+      uid: 610693e2-f299-4181-97cb-4d7e297707ff
+    resourceVersion: "2651407"
+    uid: a27919f7-478c-4109-9c3a-75f4ed3932c9
+- apiVersion: v1
+  data:
+    ca-bundle.crt: ""
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:50:34Z"
+    name: velocity-5-global-ca
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: velocity-5-build
+      uid: 610693e2-f299-4181-97cb-4d7e297707ff
+    resourceVersion: "2651411"
+    uid: 98739634-3f0d-4039-b907-367acec80bad
+- apiVersion: v1
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T20:50:34Z"
+    name: velocity-5-sys-config
+    namespace: minecraft
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: velocity-5-build
+      uid: 610693e2-f299-4181-97cb-4d7e297707ff
+    resourceVersion: "2651409"
+    uid: 941e5fc9-18ea-4874-8c0d-a40ec8b3b86f
+- apiVersion: v1
+  data:
+    plugins.json: |-
+      {
+        "plugins": [{
+          "name": "geyser",
+          "url": "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/velocity"
+        },{
+          "name": "ViaVersion",
+          "url": "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/4.10.0/PAPER/ViaVersion-4.10.0.jar"
+        },{
+          "name": "ViaBackwards",
+          "url": "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/4.10.0/PAPER/ViaBackwards-4.10.0.jar"
+        }]
+      }
+  immutable: false
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-05T16:23:43Z"
+    name: velocity-plugins
+    namespace: minecraft
+    resourceVersion: "2599366"
+    uid: 94712316-3eab-44c5-84ca-4b494719fa8d
+kind: List
+metadata:
+  resourceVersion: ""
