@@ -1,0 +1,32 @@
+FROM registry.access.redhat.com/ubi9/openjdk-21:1.18-3
+
+USER root
+RUN microdnf install jq wget -y
+
+COPY plugins.json /tmp/plugins.json
+RUN chmod 666 /tmp/plugins.json
+USER 185
+RUN mkdir /deployments/plugins && \
+    chmod -R g+rwx /deployments/plugins && \
+    cat /tmp/plugins.json | jq -r '.plugins[].url' | xargs  wget --content-disposition --directory-prefix /deployments/plugins/
+
+ENV PROJECT=paper
+ENV MINECRAFT_VERSION="1.20"
+
+#RUN VERSION_GROUP=$(curl -s https://api.papermc.io/v2/projects/$PROJECT | jq -r '.version_groups | last') && \
+#    VERSION=$(curl -s https://api.papermc.io/v2/projects/$PROJECT/version_group/$VERSION_GROUP/builds  | jq -r '.builds |map(select(.channel == "default")) | last |.version') && \
+#    NAME=$(curl -s https://api.papermc.io/v2/projects/$PROJECT/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .downloads.application.name') && \
+#    BUILD=$(curl -s https://api.papermc.io/v2/projects/$PROJECT/versions/$VERSION/builds | jq -r '.builds | map(select(.channel == "default")) | last | .build') && \
+#    curl https://api.papermc.io/v2/projects/$PROJECT/versions/$VERSION/builds/$BUILD/downloads/$NAME --output /deployments/paper.jar
+
+
+RUN LATEST_BUILD=$(curl -s https://api.papermc.io/v2/projects/${PROJECT}/versions/${MINECRAFT_VERSION}/builds | jq -r '.builds | map(select(.channel == "default") | .build) | .[-1]') && \
+    JAR_NAME=${PROJECT}-${MINECRAFT_VERSION}-${LATEST_BUILD}.jar && \
+    PAPERMC_URL="https://api.papermc.io/v2/projects/${PROJECT}/versions/${MINECRAFT_VERSION}/builds/${LATEST_BUILD}/downloads/${JAR_NAME}" && \
+    curl $PAPERMC_URL --output /deployments/paper.jar
+
+
+RUN curl https://repo.maven.apache.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.20.0/jmx_prometheus_javaagent-0.20.0.jar --output /deployments/jmx_prometheus_javaagent-0.20.0.jar
+
+COPY ./configs/eula.txt /deployments
+COPY ./configs/jmx-exporter.yml /deployments
