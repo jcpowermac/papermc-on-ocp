@@ -8,7 +8,6 @@ RUN chmod 666 /tmp/plugins.json
 USER 185
 RUN mkdir /deployments/plugins && \
     chmod -R g+rwx /deployments/plugins && \
-    cp -v *.jar /deployments/plugins/ && \
     cat /tmp/plugins.json | jq -r '.plugins[].url' | xargs  wget --content-disposition --directory-prefix /deployments/plugins/
 
 ENV PROJECT=paper
