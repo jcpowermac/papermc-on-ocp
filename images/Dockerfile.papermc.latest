@@ -7,8 +7,14 @@ COPY plugins.json /tmp/plugins.json
 RUN chmod 666 /tmp/plugins.json
 USER 185
 RUN mkdir /deployments/plugins && \
-    chmod -R g+rwx /deployments/plugins && \
-    cat /tmp/plugins.json | jq -r '.plugins[].url' | xargs wget --header="Accept: text/html" --content-disposition --directory-prefix /deployments/plugins/
+    chmod -R g+rwx /deployments/plugins
+#    cat /tmp/plugins.json | jq -r '.plugins[].url' | xargs wget --header="Accept: text/html" --content-disposition --directory-prefix /deployments/plugins/
+
+
+RUN token=$(curl -X POST -H "Content-Type: application/json" --data '{"username":"admin","password":"admin"}' ${PLUGINS_URL}/api/login) && \
+    curl -X GET -H "Content-Type: application/json" -H "X-Auth: ${token}" ${PLUGINS_URL}/api/resources/${PLUGINS_PATH} | jq -r '.items[].path' | xargs -I {} wget --content-disposition --header "X-Auth: ${token}" ${PLUGINS_URL}/api/raw/{}
+
+
 
 ENV PROJECT=paper
 ENV MINECRAFT_VERSION="1.21"
