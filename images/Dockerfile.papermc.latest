@@ -17,7 +17,7 @@ RUN token=$(curl -X POST -H "Content-Type: application/json" --data '{"username"
 
 
 ENV PROJECT=paper
-ENV MINECRAFT_VERSION="1.21"
+ENV MINECRAFT_VERSION="1.21.3"
 
 #RUN VERSION_GROUP=$(curl -s https://api.papermc.io/v2/projects/$PROJECT | jq -r '.version_groups | last') && \
 #    VERSION=$(curl -s https://api.papermc.io/v2/projects/$PROJECT/version_group/$VERSION_GROUP/builds  | jq -r '.builds |map(select(.channel == "default")) | last |.version') && \
