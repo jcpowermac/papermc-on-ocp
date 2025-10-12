@@ -1,0 +1,59 @@
+apiVersion: v1
+data:
+  plugins.json: |-
+    {
+      "plugins": [
+      {
+        "name": "luckperms",
+        "url": "https://download.luckperms.net/1552/bukkit/loader/LuckPerms-Bukkit-5.4.137.jar"
+      },
+      {
+        "name": "axiom",
+        "url": "https://cdn.modrinth.com/data/evkiwA7V/versions/rgf4Xaj0/AxiomPaper-4.0.1-for-MC1.21.1.jar"
+      },
+      {
+        "name": "vault",
+        "url": "https://github.com/MilkBowl/Vault/releases/download/1.7.3/Vault.jar"
+      },
+      {
+        "name": "crazyauctions",
+        "url": "https://cdn.modrinth.com/data/U3Q9GAst/versions/ly5Rsrrq/CrazyAuctions-1.5.1.jar"
+      },
+      {
+        "name": "worldedit",
+        "url": "https://cdn.modrinth.com/data/1u6JkXh5/versions/Jo76t1oi/worldedit-bukkit-7.3.5.jar"
+      },
+      {
+        "name": "motd-minimessage",
+        "url": "https://github.com/jpenilla/MiniMOTD/releases/download/v2.1.2/minimotd-bukkit-2.1.2.jar"
+      },
+      {
+        "name": "essentialsx-chat",
+        "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXChat-2.21.0-dev+129-2ac37d8.jar"
+      },
+      {
+        "name": "essentialsx-spawn",
+        "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXSpawn-2.21.0-dev+129-2ac37d8.jar"
+      },
+      {
+        "name": "essentialsx-protect",
+        "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXProtect-2.21.0-dev+129-2ac37d8.jar"
+      },
+      {
+        "name": "essentials-discord",
+        "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXDiscord-2.21.0-dev+129-2ac37d8.jar"
+      },
+      {
+        "name": "essentialsx-core",
+        "url": "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.21.0-dev+129-2ac37d8.jar"
+      }
+      ]
+    }
+immutable: false
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-05-05T16:24:22Z"
+  name: papermc-plugins
+  namespace: minecraft
+  resourceVersion: "58389547"
+  uid: 2538c59e-ff2d-441a-b6ac-1c6087dc4067

@@ -1,0 +1,43 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: lifesteal-plugins-pvc
+    namespace: minecraft
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 5Gi
+    storageClassName: local-storage
+    volumeMode: Filesystem
+    volumeName: lifesteal-plugins-pv
+  status:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 5Gi
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: lifesteal-universe-pvc
+    namespace: minecraft
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 5Gi
+    storageClassName: local-storage
+    volumeMode: Filesystem
+    volumeName: lifesteal-universe-pv
+  status:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 5Gi
+kind: List
+metadata:
+  resourceVersion: ""

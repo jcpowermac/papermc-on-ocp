@@ -1,0 +1,59 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    name: lifesteal-plugins-pv
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 5Gi
+    claimRef:
+      apiVersion: v1
+      kind: PersistentVolumeClaim
+      name: lifesteal-plugins-pvc
+      namespace: minecraft
+    local:
+      path: /srv/lifesteal/plugins
+    nodeAffinity:
+      required:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - b0-41-6f-0c-e8-b7
+    persistentVolumeReclaimPolicy: Retain
+    storageClassName: local-storage
+    volumeMode: Filesystem
+- apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    name: lifesteal-universe-pv
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 5Gi
+    claimRef:
+      apiVersion: v1
+      kind: PersistentVolumeClaim
+      name: lifesteal-universe-pvc
+      namespace: minecraft
+    local:
+      path: /srv/lifesteal/universe
+    nodeAffinity:
+      required:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - b0-41-6f-0c-e8-b7
+    persistentVolumeReclaimPolicy: Retain
+    storageClassName: local-storage
+    volumeMode: Filesystem
+kind: List
+metadata:
+  resourceVersion: ""
